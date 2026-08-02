@@ -1,406 +1,134 @@
-# 🛡️ AlphaGrid
-### AI-Powered Autonomous Cybersecurity Platform for Private 5G Networks
 
 <p align="center">
-  <img src="docs/assets/logo.png" width="180" alt="AlphaGrid Logo">
-</p>
-
-<p align="center">
-
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Python](https://img.shields.io/badge/Python-3.11+-green)
-![React](https://img.shields.io/badge/React-19-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success)
-![Docker](https://img.shields.io/badge/Docker-Containerization-blue)
-![Azure](https://img.shields.io/badge/Azure-Cloud-blue)
-![Private 5G](https://img.shields.io/badge/Private-5G-red)
-![AI](https://img.shields.io/badge/Gemini-AI-purple)
-
+  <h1 align="center">🛡️ AlphaGrid — Engineering Blueprint</h1>
+  <p align="center"><strong>AI-Powered Autonomous Cybersecurity Platform for Private 5G Networks</strong></p>
+  <p align="center">
+    <em>Complete Engineering Knowledge Base • Architecture • Workflows • Scenarios</em>
+  </p>
 </p>
 
 ---
 
-# 📖 Overview
-
-**AlphaGrid** is an AI-native cybersecurity platform purpose-built for **Private 5G Networks**, combining **Deep Packet Inspection (DPI)**, **Threat Intelligence**, **Telecom Subscriber Context**, **Knowledge Graph Analytics**, and **AI-powered Autonomous Security Operations** into a unified enterprise Security Operations Center (SOC).
-
-Unlike traditional SIEM/SOC platforms that only detect alerts, AlphaGrid performs **AI-assisted reverse investigations**, reconstructs attack chains, correlates telecom-aware context, and enables automated response workflows to significantly reduce analyst workload and improve Mean Time to Detect (MTTD) and Mean Time to Respond (MTTR).
-
----
-
-# 🚀 Key Features
-
-- 🔍 Multi-Engine Deep Packet Inspection (Suricata, Zeek, nDPI)
-- 🤖 Gemini AI Threat Correlation & Investigation
-- 📡 Telecom-Aware Private 5G Intelligence
-- 🌐 Threat Intelligence Integration (VirusTotal, GeoIP, WHOIS, AbuseIPDB, MalwareBazaar)
-- 🕸️ Neo4j Knowledge Graph for Attack Visualization
-- 🛡️ AI-Powered Reverse Investigation Engine
-- ⚡ Automated SOAR Response Workflows
-- 📊 Executive & SOC Dashboards
-- 📑 AI-Generated Executive Reports
-- ☁️ Cloud-Native Azure Deployment
-- 🔐 Enterprise Authentication & Authorization
-- 📈 Scalable Microservices Architecture
+> **Classification:** Confidential — Internal Engineering Use Only  
+> **Version:** 1.0.0  
+> **Last Updated:** August 2026  
+> **Maintained by:** AlphaGrid Founding Engineering Team
 
 ---
 
-# 🎯 Problem Statement
+## 🎯 What is This Repository?
 
-Modern enterprises are rapidly deploying **Private 5G** infrastructure across manufacturing, logistics, healthcare, airports, and critical infrastructure. Traditional cybersecurity platforms generate massive volumes of alerts but lack:
+This is **NOT documentation**. This is **NOT a presentation**.
 
-- Private 5G awareness
-- Telecom subscriber intelligence
-- Automated investigation
-- Root cause analysis
-- AI-assisted decision making
-- Autonomous response
+This is the **complete engineering brain** of AlphaGrid — the single source of truth that explains every module, every decision, every workflow, every technology, every attack scenario, every response scenario, and every expected output of the platform.
 
-This results in:
+Think of it as the internal engineering knowledge base used by companies like **CrowdStrike, Palo Alto Networks, Microsoft, or Cisco** before building a product.
 
-- Alert fatigue
-- Slow investigations
-- High operational cost
-- Increased security risk
-- Delayed incident response
+**If tomorrow we hire 100 engineers, this repository alone should tell them exactly what to build.**
 
 ---
 
-# 💡 Our Solution
+## 📖 Repository Structure
 
-AlphaGrid transforms traditional SOC operations into an **AI-native autonomous cybersecurity platform**.
+| # | File | Description | Pages |
+|---|---|---|---|
+| 00 | [Executive Summary](./00_Executive_Summary.md) | Vision, problem, solution, key innovations | ~10 |
+| 01 | [Product Vision](./01_Product_Vision.md) | Business context, market gap, customer journey | ~15 |
+| 02 | [System Architecture](./02_System_Architecture.md) | High-level architecture, component diagrams, data flow | ~20 |
+| 03 | [Frontend](./03_Frontend.md) | React dashboard, modules, state management, UX | ~20 |
+| 04 | [Authentication](./04_Authentication.md) | Firebase, OAuth 2.0, JWT, RBAC, MFA, sessions | ~15 |
+| 05 | [Backend](./05_Backend.md) | FastAPI microservices, APIs, middleware, scaling | ~25 |
+| 06 | [Deep Packet Inspection](./06_DPI.md) | Suricata, Zeek, nDPI, packet pipeline, correlation | ~25 |
+| 07 | [AI Engine](./07_AI_Engine.md) | Gemini AI, prompt engineering, scoring, MITRE mapping | ~20 |
+| 08 | [Threat Intelligence](./08_Threat_Intelligence.md) | VirusTotal, AbuseIPDB, GeoIP, IOC enrichment pipeline | ~15 |
+| 09 | [Private 5G](./09_Private_5G.md) | Open5GS, 5G core functions, subscriber context, N6 | ~20 |
+| 10 | [Reverse Investigation](./10_Reverse_Investigation.md) | RTIE engine, attack reconstruction, root cause analysis | ~20 |
+| 11 | [Ransomware](./11_Ransomware.md) | Complete ransomware case study, detection to recovery | ~15 |
+| 12 | [SOAR & Response](./12_SOAR.md) | Decision engine, playbooks, autonomous response | ~15 |
+| 13 | [Deployment](./13_Deployment.md) | Azure, Docker, Kubernetes, monitoring, CI/CD | ~15 |
+| 14 | [Database](./14_Database.md) | PostgreSQL, Redis, Neo4j, Firebase, schema design | ~15 |
+| 15 | [API Reference](./15_API.md) | Complete API documentation for all microservices | ~20 |
+| 16 | [Attack Scenarios](./16_Scenarios.md) | Airport, factory, hospital, bank, power grid scenarios | ~25 |
+| 17 | [Market & Business](./17_Market_and_Business.md) | Business model, pricing, competitors, GTM strategy | ~10 |
+| 18 | [Future Roadmap](./18_Future_Roadmap.md) | Planned features, research areas, product evolution | ~10 |
 
-```text
-Private 5G Traffic
-        │
-Packet Capture
-        │
-Deep Packet Inspection
-(Suricata + Zeek + nDPI)
-        │
-Threat Correlation
-        │
-Threat Intelligence
-        │
-Gemini AI Investigation
-        │
-Neo4j Knowledge Graph
-        │
-Risk Scoring
-        │
-Decision Engine
-        │
-Autonomous Response
-        │
-Executive Dashboard
+**Total estimated depth: ~330 pages of engineering content**
+
+---
+
+## 🏗️ Diagrams
+
+All Mermaid diagram source files are in the [`diagrams/`](./diagrams/) directory:
+
+| Diagram | File | Description |
+|---|---|---|
+| System Architecture | `architecture.mmd` | End-to-end platform architecture |
+| DPI Pipeline | `dpi_pipeline.mmd` | Packet capture through correlation |
+| AI Workflow | `ai_workflow.mmd` | Gemini AI processing pipeline |
+| Deployment | `deployment.mmd` | Azure + Kubernetes deployment |
+| Authentication | `authentication.mmd` | Login through session validation |
+| Database | `database.mmd` | Multi-database architecture |
+| Reverse Investigation | `reverse_investigation.mmd` | Alert to root cause |
+| Private 5G | `private5g.mmd` | 5G core topology and context resolution |
+| Ransomware | `ransomware.mmd` | Ransomware detection and response |
+| Sequence | `sequence.mmd` | Key interaction sequences |
+| Component | `component.mmd` | Component relationships |
+
+---
+
+## 🧬 Core Philosophy
+
+Every chapter in this blueprint follows a consistent template:
+
+```
+1. Overview — What is this module?
+2. Why It Exists — What problem does it solve?
+3. Business Value — Why should customers care?
+4. Engineering Objective — What are we building?
+5. Complete Workflow — Step-by-step data flow
+6. Internal Architecture — How it's built internally
+7. Components — Building blocks
+8. Data Flow — What goes in, what comes out
+9. Technologies — What tools and frameworks
+10. APIs — Endpoints and contracts
+11. Inputs & Outputs — Precise data definitions
+12. Security — How this module is secured
+13. Monitoring — How we observe it
+14. Failure Scenarios — What can go wrong
+15. Scalability — How it grows
+16. Expected Result — What success looks like
+17. Future Improvements — What's next
+18. Diagrams — Visual representations
 ```
 
 ---
 
-# 🏗️ System Architecture
+## 🚀 Quick Start for Engineers
 
-```
-Users
-        │
-React Dashboard
-        │
-Firebase Authentication
-        │
-OAuth2 + JWT + RBAC
-        │
-API Gateway
-        │
-FastAPI Microservices
-        │
-Packet Processing Engine
-        │
-Suricata • Zeek • nDPI
-        │
-Threat Intelligence
-        │
-Gemini AI
-        │
-Knowledge Graph
-        │
-Decision Engine
-        │
-SOAR
-        │
-Dashboards & Reports
-```
+1. **Start here:** Read [00_Executive_Summary.md](./00_Executive_Summary.md) to understand the vision
+2. **Understand the architecture:** Read [02_System_Architecture.md](./02_System_Architecture.md)
+3. **Pick your module:** Navigate to the relevant chapter for your team
+4. **Reference diagrams:** Use the `diagrams/` folder for visual context
+5. **Check scenarios:** Read [16_Scenarios.md](./16_Scenarios.md) to understand real-world usage
 
 ---
 
-# ⚙️ Technology Stack
+## 📋 Key Facts
 
-## Frontend
-
-- React.js
-- TypeScript
-- Tailwind CSS
-- React Router
-- Chart.js
-- Material UI
-
-## Backend
-
-- FastAPI
-- Python
-- REST APIs
-- Async Processing
-- WebSockets
-
-## Authentication
-
-- Firebase Authentication
-- OAuth 2.0
-- JWT
-- Role-Based Access Control (RBAC)
-- Multi-Factor Authentication (MFA)
-
-## AI & Analytics
-
-- Gemini AI
-- Prompt Engineering
-- Threat Correlation
-- Behavioral Analytics
-- MITRE ATT&CK Mapping
-- Cyber Kill Chain Mapping
-- Dynamic Risk Scoring
-
-## Detection Engines
-
-- Suricata IDS/IPS
-- Zeek Network Monitor
-- nDPI Deep Packet Inspection
-
-## Threat Intelligence
-
-- VirusTotal
-- AbuseIPDB
-- WHOIS
-- GeoIP
-- Passive DNS
-- MalwareBazaar
-- CVE Database
-
-## Databases
-
-- PostgreSQL
-- Redis
-- Neo4j
-- Firebase
-
-## Cloud & DevOps
-
-- Azure
-- Docker
-- Kubernetes
-- Azure Front Door
-- Azure Load Balancer
-- WAF
-- DDoS Protection
-- GitHub Actions
-
-## Monitoring
-
-- Prometheus
-- Grafana
-- ELK Stack
-- Jaeger
+| Attribute | Value |
+|---|---|
+| **Project Name** | AlphaGrid |
+| **Domain** | AI-Powered Cybersecurity for Private 5G |
+| **Frontend** | React + TypeScript + Tailwind CSS |
+| **Backend** | FastAPI (Python 3.11+) |
+| **AI Engine** | Google Gemini |
+| **Detection** | Suricata + Zeek + nDPI |
+| **Databases** | PostgreSQL, Redis, Neo4j, Firebase |
+| **Cloud** | Microsoft Azure (AKS) |
+| **Authentication** | Firebase + OAuth 2.0 + JWT + RBAC + MFA |
+| **Graph Analytics** | Neo4j Knowledge Graph |
+| **Response** | SOAR with configurable playbooks |
 
 ---
 
-# 🔄 End-to-End Workflow
-
-```
-Traffic Capture
-        │
-Packet Inspection
-        │
-Threat Detection
-        │
-AI Correlation
-        │
-Threat Intelligence
-        │
-Subscriber Context
-        │
-Knowledge Graph
-        │
-Risk Scoring
-        │
-Decision Engine
-        │
-SOAR Response
-        │
-Executive Report
-```
-
----
-
-# 🔍 AI Reverse Investigation Engine
-
-One of AlphaGrid's core innovations is its **Reverse Investigation Engine**, which reconstructs the complete attack path from a single security alert.
-
-```
-Alert
- │
-IOC Extraction
- │
-Threat Intelligence
- │
-Subscriber Context
- │
-Knowledge Graph
- │
-Attack Timeline
- │
-Root Cause Analysis
- │
-Business Impact
- │
-Containment
- │
-Executive Report
-```
-
-Instead of manually analyzing logs across multiple security tools, AlphaGrid automatically correlates events and produces a comprehensive investigation report.
-
----
-
-# 🛡️ Autonomous Response
-
-Based on AI-generated risk scores, AlphaGrid can automatically execute predefined response actions.
-
-Examples include:
-
-- Block Malicious IP
-- Block Domain
-- Quarantine Endpoint
-- Kill User Session
-- Notify SOC Team
-- Generate Compliance Report
-- Preserve Digital Evidence
-- Generate Executive Summary
-
----
-
-# 🦠 Ransomware Detection Workflow
-
-```
-Initial Access
-      │
-Payload Execution
-      │
-SMB Activity
-      │
-File Encryption
-      │
-Hash Analysis
-      │
-Threat Intelligence
-      │
-Risk Score
-      │
-Critical Threshold
-      │
-Endpoint Isolation
-      │
-Evidence Collection
-      │
-Executive Report
-```
-
----
-
-# 📊 Dashboards
-
-AlphaGrid includes dedicated interfaces for:
-
-- Executive Dashboard
-- SOC Dashboard
-- Network Intelligence
-- DPI Analysis
-- AI Threat Investigation
-- Threat Intelligence
-- Compliance Reports
-- Administration
-- System Monitoring
-
----
-
-# 📈 Business Benefits
-
-- Reduced Mean Time to Detect (MTTD)
-- Reduced Mean Time to Respond (MTTR)
-- Lower SOC Operational Costs
-- AI-Assisted Investigation
-- Telecom-Aware Threat Visibility
-- Enterprise Scalability
-- Improved Cyber Resilience
-- Executive Decision Support
-
----
-
-# 🎯 Target Industries
-
-- Private 5G Operators
-- Manufacturing
-- Smart Factories
-- Airports
-- Logistics
-- Healthcare
-- Critical Infrastructure
-- Telecom Operators
-- Smart Cities
-
----
-
-# 🚀 Future Roadmap
-
-- AI Security Copilot
-- Edge AI Inference
-- Open RAN Integration
-- Multi-Cloud Deployment
-- Digital Twin Security
-- Federated Threat Learning
-- Autonomous Threat Hunting
-- Multi-Tenant SaaS Platform
-
----
-
-# 📂 Repository Structure
-
-```
-AlphaGrid/
-│── frontend/
-│── backend/
-│── ai-engine/
-│── dpi/
-│── deployment/
-│── docs/
-│── diagrams/
-│── datasets/
-│── scripts/
-│── docker/
-│── kubernetes/
-│── api/
-│── tests/
-└── README.md
-```
-
----
-
-# 👥 Team
-
-**AlphaGrid Development Team**
-
-Building the next generation of **AI-powered cybersecurity for Private 5G networks**.
-
----
-
-## ⭐ If you find this project interesting, consider giving it a Star!
-
-> **AlphaGrid — Securing the Future of Private 5G with AI, Threat Intelligence, and Autonomous Cyber Defense.**
-> 
+*© 2026 AlphaGrid. All rights reserved. This repository contains confidential and proprietary engineering information.*
